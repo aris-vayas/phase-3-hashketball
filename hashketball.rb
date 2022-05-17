@@ -124,6 +124,17 @@ def game_hash
       ]
     }
   }
-end
 
-# Write code here
+
+
+
+     
+
+    
+     
+end
+totalplayers = game_hash[:home][:players]+
+game_hash[:away][:players]
+ totalplayers.map do |player|
+  puts player[:steals]
+end
